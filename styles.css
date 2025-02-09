@@ -497,6 +497,19 @@ img {
 /* REVISTA */
 
 
+.revista__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+}
+.revista__blob {
+  fill: var(--first-color);
+}
+.revista__blob-img {
+  width: 360px;
+}
+
 .home__title-color2 {
   background: linear-gradient(to right, purple, blue, green, yellow, orange, red);
   background-clip: text; /* Versão padrão */
