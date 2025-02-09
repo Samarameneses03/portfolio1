@@ -504,6 +504,25 @@ img {
   -webkit-text-fill-color: transparent; /* Para fazer o gradiente aparecer */
 }
 
+.about-revista{
+  text-align: center;
+}
+
+
+.img-revista{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.conceito-revista img {
+  max-width: 300%;
+  width: 100%;
+  height: auto;
+}
 
 /* THANKS */ 
 .Thanks-home{
