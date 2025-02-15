@@ -58,4 +58,31 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 sr.reveal('.img-revista img', { delay: 300, interval: 200 });
 sr.reveal('.about-revista', { delay: 300, interval: 200 });
 
+// LOAD MORE
+
+
+
+let loadMoreBtn = document.querySelector('.button_load_more');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.work__container .work__img')];
+    for (let i = currentItem; i < currentItem + 3 && i < boxes.length; i++) {
+        boxes[i].style.display = 'inline-block';
+    }
+    currentItem += 3;
+
+    if (currentItem >= boxes.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+};
+
+// Esconde os itens extras inicialmente
+document.addEventListener('DOMContentLoaded', () => {
+    let boxes = [...document.querySelectorAll('.work__container .work__img')];
+    boxes.forEach((box, index) => {
+        if (index >= 3) box.style.display = 'none';
+    });
+});
+
 

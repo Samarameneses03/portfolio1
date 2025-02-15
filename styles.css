@@ -492,7 +492,33 @@ img {
   display: none;
 }
 
+/* LOAD MORE */ 
 
+.container_button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.button_load_more{
+  background-color: var(--first-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  transition: 0.3s;
+  margin-top: 50px;
+}
+
+.button_load_more:hover{
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
 
 /* REVISTA */
 
